@@ -1,0 +1,101 @@
+body {
+    width: 100%; 
+    height: 100vh;
+    display: inline-block; 
+    margin: 0;
+    background-color: #f5f4ee;
+    color: black;
+    font-family: Raleway, Roboto, sans-serif;
+    font-size: 16px;
+}
+
+/* Style for Heading and paragraph (sub-heading) */
+h1, p { 
+    font-family: Pattaya;
+    margin: 0.5rem auto; 
+    text-align: center;
+}
+
+/* Style for the form element */
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+/* Style for fieldset elements */
+fieldset { 
+    border: none; 
+}
+
+/* Style for label elements */
+label { 
+    display: block;
+    margin: 0.5rem 0rem;
+}
+
+/* Style for the personal-info fieldset */
+.personal-info {
+    padding: 2rem 0rem 1rem 0rem;
+}
+
+/* Style for the select element */
+.country-choice {
+    background-color: white; 
+    border: 1px solid green; 
+    min-height: 1.5rem; 
+    display: inline-block;
+    margin: 1em auto; 
+    border-radius: 3px;
+}
+
+/* Style for the gender-group fieldset */
+.gender-group {
+    padding-bottom: 2rem;
+}
+
+/* Style for inline elements */
+.inline { 
+    display: inline-block;
+}
+
+/* Style for input and textarea elements */
+input, textarea {
+    background-color: white;
+    border: 1px solid #0a0a23;
+    color: black;
+    border-radius: 3px;
+}
+
+/* Style for the interests text-box */
+.text-box {
+    padding-bottom: 1rem;
+}
+
+/* Style for T's & C's and weekly email labels */
+.terms-and-weekly {
+    font-size: 0.8rem;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    display: inline-block;
+    width: 30%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: lightgreen;
+    border-color: black;
+    min-width: 30%;
+    margin-top: 3rem;
+}
+
+/* Media query for screens 600px wide or smaller */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px; /* Adjust the font size for smaller screens */
+    padding: 0.3rem; /* Padding for smaller screens */
+  }
+}

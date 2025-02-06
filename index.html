@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Profile page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+  <body>
+    <h1 id="title">Profile page</h1>
+    <p id="description">Let us know some information about you</p>
+    <hr class="top-hr">
+    <form id="survey-form">
+        <fieldset class="personal-info">
+            <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter name here" required /></label>
+            <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter email here" required /></label>
+            <label for="number" id="number-label">Age: <input id="number" name="number" type="number" min="18" max="120" placeholder="(18+)" /></label>
+            <label for="dropdown">Country:
+                <select id="dropdown" name="Dropdown" class="country-choice">
+                    <option value="">--Choose your Country--</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Belgium">Belgium</option>
+                    <option value="France">France</option>
+                    <option value="Spain">Spain</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Other">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="gender-group">
+            <label for="Male"><input id="Male" name="Gender" type="radio" class="gender" value="Male" checked />Male</label>
+            <label for="Female"><input id="Female" name="Gender" type="radio" class="gender" value="Female" />Female</label>
+            <label for="Prefer-not-to-say"><input id="Prefer-not-to-say" name="Gender" type="radio" class="gender" value="Prefer not to say" />Prefer not to say</label>
+        </fieldset>
+        <div>Tell us your interests:</div>
+        <div class="text-box">
+            <label for="interests">
+                <textarea id="interests" name="interests" rows="6" cols="30" placeholder="Football, Reading, Cooking etc"></textarea>
+            </label>
+        </div>
+        <label for="terms-and-conditions" class="terms-and-weekly">
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="weekly-email" /> I accept the terms and conditions
+        </label>
+        <label for="receive-weekly-email" class="terms-and-weekly">
+            <input class="inline" id="receive-weekly-email" type="checkbox" name="receive-weekly-email" value="weekly-email" /> I want to receive a weekly email
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
