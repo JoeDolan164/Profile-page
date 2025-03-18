@@ -17,16 +17,13 @@
         <fieldset class="personal-info">
             <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter name here" required /></label>
             <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter email here" required /></label>
-            <label for="number" id="number-label">Age: <input id="number" name="number" type="number" min="18" max="120" placeholder="(18+)" /></label>
-            <label for="dropdown">Country:
-                <select id="dropdown" name="Dropdown" class="country-choice">
+            <label for="age" id="age-label">Age:</label>
+                <select id="age" name="age">
+                    <option value="">--Select age--</option>
+                </select>
+            <label for="countries">Country:
+                <select id="countries" name="country">
                     <option value="">--Choose your Country--</option>
-                    <option value="Argentina">Argentina</option>
-                    <option value="Belgium">Belgium</option>
-                    <option value="France">France</option>
-                    <option value="Spain">Spain</option>
-                    <option value="United Kingdom">United Kingdom</option>
-                    <option value="Other">Other</option>
                 </select>
             </label>
         </fieldset>
@@ -49,5 +46,6 @@
         </label>
         <input id="submit" type="submit" value="Submit" />
     </form>
+    <script src="script.js"></script>
   </body>
 </html>

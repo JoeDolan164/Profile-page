@@ -41,14 +41,18 @@ label {
     padding: 2rem 0rem 1rem 0rem;
 }
 
+#age-label {
+    display: inline-block;
+}
+
 /* Style for the select element */
-.country-choice {
+#countries {
     background-color: white; 
     border: 1px solid green; 
     min-height: 1.5rem; 
-    display: inline-block;
-    margin: 1em auto; 
+    display: block;
     border-radius: 3px;
+    margin-top: 0.5rem;
 }
 
 /* Style for the gender-group fieldset */
@@ -76,12 +80,15 @@ input, textarea {
 
 /* Style for T's & C's and weekly email labels */
 .terms-and-weekly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 0.8rem;
 }
 
 /* Style for the submit button */
 input[type="submit"] {
-    display: inline-block;
+    display: flex;
     width: 30%;
     margin: 1em auto;
     height: 2em;
@@ -89,9 +96,9 @@ input[type="submit"] {
     background-color: lightgreen;
     border-color: black;
     min-width: 30%;
-    margin-top: 3rem;
+    margin-top: 1rem;
+    border-radius: 20px;
 }
-
 /* Media query for screens 600px wide or smaller */
 @media only screen and (max-width: 600px) {
   body {
